@@ -4,10 +4,59 @@
       "co2": { "name": "CO2" },
       "air_temperature": { "name": "Air temperature" },
       "filter": { "name": "Filter life" },
-      "rssi": { "name": "WiFi signal" }
+      "rssi": { "name": "WiFi signal" },
+      "mqtt_latency": { "name": "MQTT latency" },
+      "gw_latency": { "name": "Gateway latency" },
+      "gw_loss": { "name": "Gateway packet loss" }
     },
     "number": {
       "heat_setpoint": { "name": "Heating setpoint" }
+    },
+    "climate": {
+      "split_ac": {
+        "state_attributes": {
+          "fan_mode": {
+            "state": {
+              "auto": "Auto",
+              "quiet": "Quiet",
+              "low": "Low",
+              "mid_low": "Medium-low",
+              "medium": "Medium",
+              "mid_high": "Medium-high",
+              "high": "High",
+              "turbo": "Turbo"
+            }
+          }
+        }
+      }
+    },
+    "select": {
+      "louver_vertical": {
+        "name": "Vertical louver",
+        "state": {
+          "swing": "Swing",
+          "pos_1": "Position 1",
+          "pos_2": "Position 2",
+          "pos_3": "Position 3",
+          "pos_4": "Position 4",
+          "pos_5": "Position 5"
+        }
+      },
+      "louver_horizontal": {
+        "name": "Horizontal louver",
+        "state": {
+          "swing": "Swing",
+          "pos_1": "Position 1",
+          "pos_2": "Position 2",
+          "pos_3": "Position 3",
+          "pos_4": "Position 4",
+          "pos_5": "Position 5"
+        }
+      }
+    },
+    "switch": {
+      "display": { "name": "Display backlight" },
+      "sound": { "name": "Sound" }
     }
   },
   "config": {
