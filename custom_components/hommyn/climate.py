@@ -70,6 +70,10 @@ class HommynClimate(HommynEntity, ClimateEntity):
     _attr_target_temperature_step = 1
     _attr_min_temp = MIN_TEMP
     _attr_max_temp = MAX_TEMP
+    # Home Assistant reads these before the first MQTT state arrives.
+    _attr_hvac_mode: HVACMode | None = None
+    _attr_fan_mode: str | None = None
+    _attr_swing_mode: str | None = None
     _attr_hvac_modes = SUPPORTED_HVAC_MODES
     _attr_fan_modes = SUPPORTED_FAN_MODES
     _attr_swing_modes = SUPPORTED_SWING_MODES
